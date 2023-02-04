@@ -96,6 +96,6 @@ Die jeweiligen Bereiche und Ihre Mitglieder erstellen und verändern nur Dateien
 
 ### Branches
 
-Jedes Projektmitglied sollte eine Branch erstellen in der das Feature Programmiert wird. In der [Projektübersicht](https://github.com/orgs/GSO-SW/teams/bft12/discussions/9) können die dafür zu verwendenden Branch-Bezeichnungen entnommen werden. 
+Jedes Projektmitglied sollte eine Branch erstellen in der das Feature Programmiert wird. In der [Projektübersicht](https://github.com/GSO-SW/MultiTool/blob/main/README.md#projekt-und-branchaufteilung) können die dafür zu verwendenden Branch-Bezeichnungen entnommen werden. 
 
 Wenn Branches gepusht werden, die selber erstellt worden sind, sind diese nicht schreibgeschützt. Aus diesem Grund ist darauf zu achten das nur in der eigenen Branch programmiert wird.
