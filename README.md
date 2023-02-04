@@ -14,7 +14,6 @@ Das Projekt ist in die Bereiche Mathematik, Elektrotechnik… aufgeteilt. Diese 
 
 
 ## Projekt und Branchaufteilung
-
 --
 
 Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, zeitnah eins vorzuschlagen. 
@@ -57,7 +56,6 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 
 
 ## Richtlinien
-
 --
 
 Die Richtlinien dienen dazu, die Zusammenarbeit geordnet und übersichtlich zu gestalten. 
