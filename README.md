@@ -1,4 +1,8 @@
-[Aufteilung](#projekt-und-branchaufteilung)  
+1. [Aufteilung](#projekt-und-branchaufteilung)
+2. [Richtlinien](#richtlinien)  
+- [Mergekonflikte](#mergekonflikte-vermeiden)  
+- [Organisation](#organisation)  
+
 
 # MultiTool
 Die Schüler des Bildungsganges Berufsfachschule wurden damit beauftragt eine Multi-Tool Software zu erstellen, welche allen kommenden Berufsfachschülern aus dem Bereich Technik als Hilfsmittel dienen soll, um ihren Schulabschluss erfolgreich zu meistern. Hierbei sollen wiederkehrende oder besonders aufwendige Aufgaben aus dem schulischen Kontext erleichtert oder gelöst werden. Diese Aufgaben ergeben sich aus den Problemstellungen der Unterrichtseinheiten der Berufsfachschule für Technik. 
@@ -10,6 +14,8 @@ Das Projekt ist in die Bereiche Mathematik, Elektrotechnik… aufgeteilt. Diese 
 
 
 ## Projekt und Branchaufteilung
+
+--
 
 Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, zeitnah eins vorzuschlagen. 
 
@@ -48,3 +54,48 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |           |Entwickler       |         |Feature23             |		
 |		                |           |Entwickler       |  	      |Feature24             |
 |		                |           |Entwickler	      |       	|Feature25             |
+
+
+## Richtlinien
+
+--
+
+Die Richtlinien dienen dazu, die Zusammenarbeit geordnet und übersichtlich zu gestalten. 
+
+Es ist von höchster Wichtigkeit, dass sich alle an diese Richtlinien halten, ansonsten kann es zu schweren Problemen bei der Zusammenführung der Bereiche kommen. 
+
+### Mergekonflikte vermeiden
+
+|||
+| ----------- 	| ----------- 	|
+|  | Default Projekte **nicht** verändern!!|
+| ⚠️ |**MultiTool** |
+| ⚠️  |**KonsolenExtrasBibliothek**  |
+
+Einstellungen oder Dateien dieser bereits in den Branches existierenden Projekte dürfen von **keinem** geändert werden. Eine Missachtung kann dazu führen das 
+
+1. Der Teamkoordinator euren Pull-Request nicht merged (Code des Entwicklers wird nicht in das Projekt eingebunden).
+2. Der Admin euren Team-Pull-Request nicht merged (Code des Teams wird nicht in das Projekt eingebunden).
+
+@GSO-SW/teamkoordinatorenbft12  achtet darauf das die Richtlinien eingehalten werden. 🦅 
+
+
+### Organisation
+
+Alle Teamkoordinatoren müssen eine neue Klassenbibliothek für ihren Bereich erstellen. Um das Untermenü aufzurufen wird eine .cs Datei erstell welche Bereichsspezifisch benannt wird. Das Untermenü soll anschließend in einer Methode realisiert werden. 
+
+|Bereich|Name der Klassenbibliothek|Untermenü Klassenname/Dateiname|Methodenbezeichnung|
+| ----------- 	| ----------- 	| ----------- 	| ----------- 	|
+| Elektrotechnik | ETFragBFTKlassenBibliothek|ETMenue/ETMenue.cs|ETSubMenue|
+| Informatik|ITFragBFTKlassenBibliothek |ITMenue/ITMenue.cs|ITSubMenue|
+| Mathematik  |MAFragBFTKlassenBibliothek |MAMenue.cs/MAMenue|MASubMenue|
+|Physik|PHFragBFTKlassenBibliothek|PHMenue/PHMenue.cs|PHSubMenue|
+|Wirtschaft|WIFragBFTKlassenBibliothek|WIMenue/WIMenue.cs|WISubMenue|
+
+Die jeweiligen Bereiche und Ihre Mitglieder erstellen und verändern nur Dateien in ihren **eigenen** Klassenbibliotheken. ⚠️ 
+
+### Branches
+
+Jedes Projektmitglied sollte eine Branch erstellen in der das Feature Programmiert wird. In der [Projektübersicht](https://github.com/orgs/GSO-SW/teams/bft12/discussions/9) können die dafür zu verwendenden Branch-Bezeichnungen entnommen werden. 
+
+Wenn Branches gepusht werden, die selber erstellt worden sind, sind diese nicht schreibgeschützt. Aus diesem Grund ist darauf zu achten das nur in der eigenen Branch programmiert wird.
