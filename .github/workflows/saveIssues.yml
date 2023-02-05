@@ -26,5 +26,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: backup-${{ env.GITHUB_SHA }}.zip
-        path: .github/issues.json .github/milestones.json
+        path: .github/workflows/issues.json .github/workflows/milestones.json
         if-no-files-found: error
