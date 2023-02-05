@@ -27,3 +27,4 @@ jobs:
       with:
         name: backup-${{ env.GITHUB_SHA }}.zip
         path: issues.json milestones.json
+        if-no-files-found: error
