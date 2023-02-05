@@ -21,6 +21,10 @@ jobs:
         curl -H "Authorization: token ${GITHUB_TOKEN}" \
              https://api.github.com/repos/${{ github.repository }}/milestones?state=all \
              > milestones.json || echo "milestones.json not found"
+    
+    - name: Debug working directory
+      run: |
+        ls -al
 
     - name: Commit and Push
       uses: actions/upload-artifact@v2
@@ -29,6 +33,4 @@ jobs:
         path: .github/workflows/issues.json .github/workflows/milestones.json
         if-no-files-found: error
         
-    - name: Debug working directory
-      run: |
-        ls -al
+
