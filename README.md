@@ -1,5 +1,6 @@
 1. [Aufteilung](#projekt-und-branchaufteilung)
-2. [Richtlinien](#richtlinien)  
+2. [Anforderungen](#anforderungen)
+3. [Richtlinien](#richtlinien)  
 - [Mergekonflikte](#mergekonflikte-vermeiden)  
 - [Organisation](#organisation)  
 
@@ -12,6 +13,22 @@ Das Projekt ist in die Bereiche Mathematik, Elektrotechnik… aufgeteilt. Diese 
 
 ***Die Teamkoordinatoren können direkt in die jeweilige Entwicklungs-Branch schreiben. Die Entwickler müssen ein Pull-Request bei den jeweiligen Koodrinatoren stellen*** 
 
+---
+
+## Anforderungen
+
+Die Einhaltung der Anforderungen wird bei der Bewertung der Teilprogramme geprüft.
+
+|Framework Anforderungen | Anforderungen an die Benutzerfreundlichkeit| Externe Anforderungen|
+|----------|----------|----------|
+|Programmiert in C#|Programm und einzelne Optionen sind beliebig oft wiederholbar.|Alle gesetzlichen vorgaben werden eingehalten.|
+|Konsolenanwendung|Eine Fehleingabe führt zu einer erneuten Eingabeaufforderung.|Moralische und ethische Grundsätze sind einzuhalten.|
+|.NET 5 |Eingabeaufforderungen können ohne gültige Eingabe verlassen werden. |-|
+|Alle Features und Menüs sind in der Klassenbibliothek zu erstellen|Das Programm kann in jederzeit beendet werden.|-|
+|-|Alle Eingaben werden über die Tastatur gemacht.|-|
+|-|Die Konsole wird beim Verlassen des aktuellen Moduls gelöscht.|-|
+
+---
 
 ## Projekt und Branchaufteilung
 
@@ -53,6 +70,8 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |           |Entwickler       |  	      |Feature24             |
 |		                |           |Entwickler	      |       	|Feature25             |
 
+
+---
 
 ## Richtlinien
 
