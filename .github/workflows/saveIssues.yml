@@ -13,7 +13,7 @@ jobs:
 
     - name: Backup Issues and Milestones
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GSO_TOKE_SAVEISSUES }}
       run: |
         curl -H "Authorization: token ${GITHUB_TOKEN}" \
              https://api.github.com/repos/${{ github.repository }}/issues?state=all \
