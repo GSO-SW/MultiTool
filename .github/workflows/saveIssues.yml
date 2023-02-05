@@ -28,3 +28,7 @@ jobs:
         name: backup-${{ env.GITHUB_SHA }}.zip
         path: .github/workflows/issues.json .github/workflows/milestones.json
         if-no-files-found: error
+        
+    - name: Debug working directory
+      run: |
+        ls -al
