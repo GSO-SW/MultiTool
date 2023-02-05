@@ -15,10 +15,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GSO_TOKE_SAVEISSUES }}
       run: |
-        curl -H "Authorization: token ${GITHUB_TOKEN}" \
+        curl -H "Authorization: token ${GSO_TOKE_SAVEISSUES}" \
              https://api.github.com/repos/${{ github.repository }}/issues?state=all \
              > issues.json || echo "issues.json not found"
-        curl -H "Authorization: token ${GITHUB_TOKEN}" \
+        curl -H "Authorization: token ${GSO_TOKE_SAVEISSUES}" \
              https://api.github.com/repos/${{ github.repository }}/milestones?state=all \
              > milestones.json || echo "milestones.json not found"
     
