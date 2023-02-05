@@ -13,6 +13,8 @@ jobs:
     
     - name: Backup Issues and Milestones
       run: |
+        ls .git/refs/issues
+      
         curl https://api.github.com/repos/${{ github.repository }}/issues?state=all \
              > issues.json || echo "issues.json not found"
         curl https://api.github.com/repos/${{ github.repository }}/milestones?state=all \
