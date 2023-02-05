@@ -10,7 +10,10 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
+    - name: Check Token
+      run: |
+        curl -v -H "Authorization: token ${GSO_TOKE_SAVEISSUES}" https://api.github.com/user/issues
+    
     - name: Backup Issues and Milestones
       env:
         GITHUB_TOKEN: ${{ secrets.GSO_TOKE_SAVEISSUES }}
