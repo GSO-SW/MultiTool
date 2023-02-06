@@ -23,7 +23,7 @@ jobs:
       
       - name: Check Token
         run: |
-          curl -I "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/GSO-SW/MultiTool/issues
+          curl -I "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/GSO-SW
   
          
       - name: Checkout repository
