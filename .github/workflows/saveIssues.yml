@@ -15,11 +15,16 @@ jobs:
         run: echo 'This step will only run if the secret has a value set.'
       - if: ${{ env.super_secret == '' }}
         run: echo 'This step will only run if the secret does not have a value set.'
-  
+
+      
       - name: Debug working directory
         run: |
           ls -al
-          
+      
+      - name: Check Token
+        run: |
+          curl -v -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user/issues   
+         
       - name: Checkout repository
         uses: actions/checkout@v2
     
