@@ -7,8 +7,7 @@ jobs:
   backup:
     runs-on: ubuntu-latest
     env:
-      super_secret: ${{ secrets.GSO_TOKEN_INTERNAL }}
-
+      GITHUB_TOKEN: ${{ secrets.GSO_TOKEN_INTERNAL }}
 
     steps:
     
@@ -17,13 +16,22 @@ jobs:
       - if: ${{ env.super_secret == '' }}
         run: echo 'This step will only run if the secret does not have a value set.'
   
-  
+      - name: Debug working directory
+        run: |
+          ls -al
+          
       - name: Checkout repository
         uses: actions/checkout@v2
     
+      - name: Backup Issues and Milestones
+        run: |
+          curl -H "Authorization: token ${GITHUB_TOKEN}" \
+               https://api.github.com/repos/${{ github.repository }}/issues?state=all \
+               > issues.json || echo "issues.json not found"
+          curl -H "Authorization: token ${GITHUB_TOKEN}" \
+               https://api.github.com/repos/${{ github.repository }}/milestones?state=all \
+               > milestones.json || echo "milestones.json not found"
 
-      - name: Display the path
-        run: echo ${env:PATH}
-        shell: pwsh
+
     
 
