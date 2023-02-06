@@ -6,26 +6,24 @@ on:
 jobs:
   backup:
     runs-on: ubuntu-latest
+    env:
+      super_secret: ${{ secrets.GSO_TOKEN_INTERNAL }}
+
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
     
-    - name: Backup Issues and Milestones
-      run: |
-        ls .git/refs/issues
-      
-        curl https://api.github.com/repos/${{ github.repository }}/issues?state=all \
-             > issues.json || echo "issues.json not found"
-        curl https://api.github.com/repos/${{ github.repository }}/milestones?state=all \
-             > milestones.json || echo "milestones.json not found"
+      - if: ${{ env.super_secret != '' }}
+        run: echo 'This step will only run if the secret has a value set.'
+      - if: ${{ env.super_secret == '' }}
+        run: echo 'This step will only run if the secret does not have a value set.'
+  
+  
+      - name: Checkout repository
+        uses: actions/checkout@v2
     
-    - name: Debug working directory
-      run: |
-        ls -al
-    - name: Commit and Push
-      uses: actions/upload-artifact@v2
-      with:
-        name: backup-${{ env.GITHUB_SHA }}.zip
-        path: milestones.json issues.json
-        if-no-files-found: error
+
+      - name: Display the path
+        run: echo ${env:PATH}
+        shell: pwsh
+    
+
