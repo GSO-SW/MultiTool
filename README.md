@@ -105,7 +105,7 @@ Alle Teamkoordinatoren müssen eine neue Klassenbibliothek für ihren Bereich er
 | Informatik|ITKlassenBibliothek |ITMenue/ITMenue.cs|ITSubMenue|
 | Mathematik  |MAKlassenBibliothek |MAMenue.cs/MAMenue|MASubMenue|
 |Physik|PHKlassenBibliothek|PHMenue/PHMenue.cs|PHSubMenue|
-|Wirtschaft|WIBFTKlassenBibliothek|WIMenue/WIMenue.cs|WISubMenue|
+|Wirtschaft|WIKlassenBibliothek|WIMenue/WIMenue.cs|WISubMenue|
 
 Die jeweiligen Bereiche und Ihre Mitglieder erstellen und verändern nur Dateien in ihren **eigenen** Klassenbibliotheken. ⚠️ 
 
