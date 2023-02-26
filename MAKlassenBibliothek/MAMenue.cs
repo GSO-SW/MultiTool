@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Figgle;
+﻿using Figgle;
 
-namespace MultiTool
+namespace MAKlassenBibliothek
 {
-    internal class Hauptmenue
+    public class MAMenue
     {
-        public static void HauptmenueAufruf()
+        public static void MA_Menue()
         {
             bool Exit = false;
 
@@ -66,7 +61,6 @@ namespace MultiTool
                     case "m":
                         Console.Clear();
                         //Hier das Mathematikmenü aufrufen
-                        MAKlassenBibliothek.MAMenue.MA_Menue();
                         break;
 
                     case "p":
@@ -95,8 +89,6 @@ namespace MultiTool
                 }
 
             } while (!Exit);
-
-
         }
     }
 }
