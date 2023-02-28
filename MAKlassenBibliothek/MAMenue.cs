@@ -48,9 +48,10 @@ namespace MAKlassenBibliothek
 
                 switch (HauptAusw)
                 {
-                    case "e":
+                    case "1":
                         Console.Clear();
-                        //Hier das Etechnikmenü aufrufen
+                        //Hier Feature1 aufrufen
+                        Feature1.Feature_1();
                         break;
 
                     case "i":
