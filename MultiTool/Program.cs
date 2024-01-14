@@ -1,8 +1,8 @@
 ﻿using System;
 
 
-//Die Größe des Konsolenfensters wird an den Bildschirm angepasst.
-Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+// //Die Größe des Konsolenfensters wird an den Bildschirm angepasst.
+// Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
 
 //Schriftfarbe wird auf Grün gesetzt.
 Console.ForegroundColor = ConsoleColor.Green;
